@@ -1,0 +1,14 @@
+{
+  "name": "cocoapods-plugin-test",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "cocoapods-plugin-test",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "",
+  "license": "ISC"
+}

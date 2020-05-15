@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cocoapods-plugin-test" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cocoapodsplugintest</name>
+    <js-module name="cocoapodsplugintest" src="www/cocoapodsplugintest.js">
+        <clobbers target="cordova.plugins.cocoapodsplugintest" />
+    </js-module>
+
+    <!--<framework src="GoogleCloudMessaging" type="podspec" spec="~> 1.2.0" />-->
+
+    <dependency id="cordova-plugin-cocoapod-support"/>
+    <platform name="ios">
+
+        <pods-config ios-min-version="11.0" use-frameworks="true">
+                <!-- optionally add private spec sources -->
+            <source url="https://github.com/LivePersonInc/iOSPodSpecs.git"/>
+        </pods-config>
+
+        <pod name="LPMessagingSDK" />
+
+    </platform>
+</plugin>
